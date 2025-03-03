@@ -173,7 +173,6 @@ const products = [
   let totalSum = 0;
   
   function add2Cart(price) {
-    console.log(price);
     cartCount++;
     totalSum = totalSum + price;
     document.getElementById("cart-total").innerText = cartCount;
@@ -183,7 +182,6 @@ const products = [
   
   function showProducts() {
     for (let product of products) {
-      console.log(product);
       const productCard = document.createElement("div");
       productCard.innerHTML = `
       <div class="card bg-base-100 shadow-sm product-card">
@@ -213,4 +211,5 @@ const products = [
     document.getElementById("sum-total").innerText = totalSum;
   }
   showProducts();
+
   
